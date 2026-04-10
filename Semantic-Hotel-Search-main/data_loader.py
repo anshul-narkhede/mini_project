@@ -6,13 +6,9 @@ import pandas as pd
 def load_data():
     """Load and preprocess hotel data from CSV."""
     try:
-        df = pd.read_csv('data/hotels.csv', encoding='utf-8')
+        df = pd.read_csv('data/hotels_sample.csv', encoding='utf-8')
     except UnicodeDecodeError:
-        df = pd.read_csv('data/hotels.csv', encoding='latin1')
-
-    # Take a random sample of 10,000 hotels
-    # random_state=42 ensures reproducibility so caching works
-    df = df.sample(n=10000, random_state=42)
+        df = pd.read_csv('data/hotels_sample.csv', encoding='latin1')
 
     # Clean up column names and fill blanks
     df.columns = df.columns.str.strip()
