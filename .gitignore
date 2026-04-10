@@ -1,0 +1,48 @@
+# Environments
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Data & Models
+data/
+*.csv
+*.json
+*.sqlite3
+*.db
+*.faiss
+*.index
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
